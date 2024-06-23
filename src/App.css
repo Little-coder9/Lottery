@@ -1,38 +1,105 @@
 .App {
-  text-align: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    background-image: url('./image/treasure.svg');
+    background-repeat: no-repeat;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title {
+  font-family: "Honk", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 2rem;
+  padding-block: 0;
+  font-style: normal;
+  letter-spacing: 3px !important;
+  font-variation-settings:
+    "MORF" 15,
+    "SHLN" 50;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.flex-container {
+    width: 70%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-block: 20px;
   }
-}
+  
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .section{
+    text-align: center;
+    border: 1px solid rgba(255,255, 255, 1);
+    border-radius: 5px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    background-color: white;
   }
-  to {
-    transform: rotate(360deg);
+
+  .btn-numbers{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding-inline: 20px;
   }
-}
+
+  .btn-number{
+    width: 50px;
+    height: 50px;
+    color: black;
+    border: 1px solid black;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  .btn-money{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid black;
+    color: #000;
+    cursor: pointer;
+  }
+
+  .money-text {
+    font-size: x-large;
+  }
+
+  .cta-buttons{
+    border: none;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+
+  .cta-btn {
+    border: none;
+    border-radius: 5%;
+    height: 40px;
+    cursor: pointer;
+  }
+
+  .cash{
+    background-color: #03C03C;
+    /* color: white; */
+  }
+
+  .clear {
+    background-color: white;
+    border: 1px solid black;
+  }
+
+  .random {
+    background-color: #FEB139;
+  }
+
+  .leftAlign {
+    text-align: left;
+  }
